@@ -78,44 +78,25 @@
 \begin_body
 
 \begin_layout Title
+Project Description -
+\end_layout
+
+\begin_layout Title
 Diffraction with a Single Slit
 \end_layout
 
 \begin_layout Author
-David Cai
+David Cai, Congming Liao, Yian Zhang
 \end_layout
 
 \begin_layout Section
-Introduction 
+Introduction
 \end_layout
 
 \begin_layout Standard
 Single slit diffraction demonstrates the wave-particle duality of light.
  Depending on both the wavelength of the light and the width of the slit,
- interference patterns with peaks of different amplitudes are formed at
- angle 
-\begin_inset Formula $sin(\delta\theta)=\frac{\lambda}{d}$
-\end_inset
-
- apart, where 
-\begin_inset Formula $d$
-\end_inset
-
- describes the width of the slit.
- Depending on 
-\begin_inset Formula $\lambda$
-\end_inset
-
- and 
-\begin_inset Formula $d$
-\end_inset
-
-, small angle approximation might be used.
- 
-\end_layout
-
-\begin_layout Section
-Materials and methods 
+ interference patterns with troug.
 \end_layout
 
 \begin_layout Subsection
@@ -127,18 +108,16 @@ In general He-NE laser with a narrow waveband 632.8 nm is used to approximate
  a monochromatic source.
  Ideally, a prism or a spatial filter is used in order to reduce the aberration
  of the source.
- We omit the source cleaning procedure in this lab since the quality of
- our light source is good.
- The laser beam passes through the first filter to coarsely filter the source.
- The light then passes through another filter with narrower width such that
- we get our final diffraction pattern on the viewing screen or the photon
- detector.
- The viewing screen or the photo detector is installed on the right-end
- of the table such that the diffracted angle can be measured more precisely,
- under the assumption that our source is close to a monochromatic source.
+ The laser beam passes through the first filter to coarsely filter the source
+ and reshape it into a stripe.
+ The light then passes through another filter with narrower width.
+ The diffraction pattern can be seen the viewing screen, and direct measurments
+ can be made with calipers.
+ Alternatively, a photo-detector can be used by moving it transversely across
+ the table while taking intensity measurement.
+ Both measurement device should be installed on the right-end of the table,
+ such that our angle argument calculated is as precise as possible.
  
-\series bold
-Verify that whether we do need the first slit or not.
 \end_layout
 
 \begin_layout Subsection
@@ -146,11 +125,10 @@ Equipment
 \end_layout
 
 \begin_layout Standard
-HeNe laser; Calibration tool; Optical Breadboard Table; Optical filter or
- prism on appropriate holders with micro-adjustment; Coarse slit on a film;
- Fine, variable slit (around 100 μm); viewing screen; Photo Detector with
- a coarse slit installed in front.
- 
+HeNe laser; calibration tool; optical breadboard Table; coarse slit on a
+ film; a finer slit (around 100 μm); viewing screen; photo-detector with
+ a coarse slit installed in front; a ruler is also required to measure the
+ distance between the slit and the measurement device.
 \end_layout
 
 \begin_layout Subsection
@@ -158,15 +136,19 @@ Setup
 \end_layout
 
 \begin_layout Standard
-Regarding the length limitation of the table, we install the laser on the
- far left-end of the table.
+We utilize the length of the table by installing the laser on the far left-end
+ of the table.
  Calibration of the laser then need to be done both vertically and then
- horizontally, according to manual, or use the ThorLab alignment tool.
- First slit should be installed perpendicular to the light path around 30cm
+ horizontally, according to laser's manual, or use the 
+\emph on
+ThorLab 
+\emph default
+alignment tool.
+ First slit should be installed perpendicular to the light path around 10cm
  away from the source.
  The second slit should then follow closely at around 3-5cm away.
- Place the viewing screen on the far right end of the table such that we
- measure 
+ Place the viewing screen on the far right end of the table such that the
+ angle difference can be measured as precisely as possible.
 \end_layout
 
 \begin_layout Section
@@ -174,20 +156,80 @@ Error Analysis
 \end_layout
 
 \begin_layout Standard
-The uncertainties come from the width of laser, the width of the slit, distance
- between the slit and the detector/ viewing screen, the transverse length
- the detector has moved, 
+The uncertainties come from the width of laser beam, the width of the slit
+ first and second, distance between the slit and the viewing screen/ detector,
+ and the transverse displacement of the detector.
+ 
 \end_layout
 
 \begin_layout Standard
-Data Analysis Bandwidth theorem is used, referring to Lab Manual of optical
- pumping experiment.
+Practically, even in pure wavelength samples, we would find residual uncertainty
+ on the wavelength by the Heisenburg's uncertainty principle 
+\begin_inset Formula $\Delta t\cdot\Delta E\ge\frac{\hbar}{2}$
+\end_inset
+
+.
+ The linewidth 
+\begin_inset Quotes eld
+\end_inset
+
+full-width at half maximum principle
+\begin_inset Quotes erd
+\end_inset
+
+ can be applied in order to predict the uncertainty on the source, according
+ to Lab Manual .
  We combine this into our calculation.
  
 \end_layout
 
+\begin_layout Standard
+We estimate that the primary source of error comes from the uncertainty
+ in the width of the slit because it is used inversely in the 
+\begin_inset Formula $arcsine$
+\end_inset
+
+ formula.
+ Similar to the single slit experiment done with neutron, we will expresses
+ our uncertainty 
+\end_layout
+
 \begin_layout Section
 Data Analysis
+\end_layout
+
+\begin_layout Standard
+The data we have post-experiemnt are the 
+\begin_inset Formula $l$
+\end_inset
+
+, the distance between slit and the screen, 
+\begin_inset Formula $d$
+\end_inset
+
+, the width of the slit, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, the wavelength of laser, and a serie of transverse displacement 
+\begin_inset Formula $\delta d_{i},$
+\end_inset
+
+where the peaks interference are measured.
+ For the photo-detector, we can measure more data such that we can generate
+ a continuous plot with peaks and troughs at various angles.
+ The purpose of generating this plot is to compare with the amplitude plot
+ generated by the Fresnel Integral 
+\begin_inset Formula $I(\delta d_{i}).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+For comparisons of the result, Fresnel Diffraction and Fraunhofer Diffraction
+ theories can be applied to compared the calculated values and measured
+ values.
 \end_layout
 
 \begin_layout Section
@@ -203,8 +245,89 @@ Verify that the wavelength
 \end_layout
 
 \begin_layout Enumerate
-Verify that the amplitude equation (integral form) based on Fresnel equation
- agrees with our finding.
+Verify our amplitude function 
+\begin_inset Formula $A(\theta)$
+\end_inset
+
+ as a function of the angle against the Fresnel Integral equation.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/fraunhofcon.html#c1
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/fresnelcon.html
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Neutron Diffraction Paper
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+Manual Diffraction Manual remote experiment Project e-Xperimenteren+ J.
+ Snellenburg, J.M.Mulder 30-01-2006
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+http://www.math.ubc.ca/~cass/courses/m309-03a/m309-projects/krzak/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-6"
+
+\end_inset
+
+Single-Slit Fresnel Diffraction Patterns: Comparison of Experimental and
+ Theoretical Results*t FRANKLIN S.
+ HARRIS, JR., MICHAEL S.
+ TAVENNER,I AND RICHARD L.
+ MITCHELL§ The Aerospace Corporation, El Segundo, California (P.
+ 0.
+ Box 95085, Los Angeles 90045)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+http://www.sevensix.co.jp/wordpress/wp-content/uploads/2017/07/Linewidth-Applicatio
+n-Note-Version-1-1-October-2013.pdf
 \end_layout
 
 \end_body
